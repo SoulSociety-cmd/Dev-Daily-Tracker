@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "serve": "node src/server.js",
-    "start": "node src/server.js"
+    "serve": "node server.js",
+    "start": "node server.js"
   },
   "dependencies": {
     "chart.js": "^4.4.0",
