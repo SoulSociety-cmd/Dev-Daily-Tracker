@@ -30,7 +30,7 @@ function App() {
     <div 
       className={`min-h-screen transition-colors duration-300 ${backgroundColor}`}
     >
-      {/* Header */}
+      {}
       <header className="border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-40">
         <div className="max-w-6xl mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
@@ -43,23 +43,23 @@ function App() {
         </div>
       </header>
 
-      {/* Main Content */}
+      {}
       <main className="max-w-6xl mx-auto px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
-          {/* Left Column - Check-in and Calendar */}
+          {}
           <div className="lg:col-span-2 space-y-6">
-            {/* Daily Check-In */}
+            {}
             <DailyCheckIn 
               lastCheckInDate={lastCheckInDate}
               currentStreak={currentStreak}
               onCheckIn={checkInToday}
             />
 
-            {/* Calendar */}
+            {}
             <CalendarView codingDays={codingDays} />
           </div>
 
-          {/* Right Column - Stats */}
+          {}
           <div className="space-y-6">
             <StatsDashboard
               totalCodingDays={codingDays.length}
@@ -71,14 +71,14 @@ function App() {
           </div>
         </div>
 
-        {/* Music Player Section */}
+        {}
         <MusicPlayer 
           selectedTrack={selectedTrack}
           onSelectTrack={setSelectedTrack}
         />
       </main>
 
-      {/* Fixed Music Player at Bottom */}
+      {}
       {selectedTrack && (
         <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg">
           <div className="max-w-6xl mx-auto px-4 py-4">
