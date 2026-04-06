@@ -14,7 +14,7 @@ const distPath = path.join(__dirname, 'dist');
 app.use(express.static(distPath));
 
 // Chặn tất cả route khác về index.html để React Router hoạt động
-app.get('*', (req, res) => {
+app.get('/*', (req, res) => {
   res.sendFile(path.join(distPath, 'index.html'));
 });
 
