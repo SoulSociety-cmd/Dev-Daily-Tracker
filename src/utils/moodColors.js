@@ -1,7 +1,3 @@
-/**
- * Mood color configuration and utilities
- */
-
 export const moodConfig = {
   happy: {
     name: 'Happy',
@@ -50,23 +46,14 @@ export const moodConfig = {
   },
 }
 
-/**
- * Get background color class for a given mood
- */
 export const getMoodBackground = (mood) => {
   return moodConfig[mood]?.bg || moodConfig.focused.bg
 }
 
-/**
- * Get mood emoji
- */
 export const getMoodEmoji = (mood) => {
   return moodConfig[mood]?.emoji || '🎯'
 }
 
-/**
- * Get all available moods
- */
 export const getAllMoods = () => {
   return Object.keys(moodConfig)
 }
